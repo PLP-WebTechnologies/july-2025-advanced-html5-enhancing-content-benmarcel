@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="official Kodecamp webpage" />
+    <meta
+      name="keywords"
+      content="Kodecamp, coding bootcamp, web development, programming"
+    />
+    <title>Kodecamp webpage</title>
+  </head>
+  <body>
+    <h1>Welcome to the kodecamp</h1>
+    <img src="./kodecamp_team_logo.jpeg" alt="Kodecamp Logo" />
+    <h2>List of Students who applied for Kodecamp 5.0</h2>
+    <p>Here are some of the students enrolled in our school:</p>
+    <ul>
+      <li>John Smith</li>
+      <li>Jane Doe</li>
+      <li>Emily Davis</li>
+      <li>Michael Brown</li>
+      <li>Bobby Chinedu</li>
+      <li>Samuel Chukwukwa</li>
+      <li>Michael Steven</li>
+      <li>Michael Brown</li>
+      <li>Fedilis Okonkwo</li>
+      <li>Friday Moses</li>
+    </ul>
+
+    <h2>List of Students who were accepted</h2>
+    <ol>
+      <li>John Smith</li>
+      <li>Jane Doe</li>
+      <li>Bobby Chinedu</li>
+      <li>Samuel Chukwukwa</li>
+      <li>Michael Steven</li>
+      <li>Friday Moses</li>
+    </ol>
+
+    <h2>Last year outstanding graduates</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Position</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sultan Smith</td>
+          <td>Web Development</td>
+          <td>1</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td>Jane Azuani</td>
+          <td>Graphic Design</td>
+          <td>2</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Caleb Davis</td>
+          <td>Data Science</td>
+          <td>3</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <td>Edward Brown</td>
+          <td>Cyber Security</td>
+          <td>4</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Amaka Chinedu</td>
+          <td>Mobile App Development</td>
+          <td>5</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>Samson Chukwukwa</td>
+          <td>Cloud Computing</td>
+          <td>6</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>Austine Steven</td>
+          <td>AI & Machine Learning</td>
+          <td>7</td>
+          <td>65</td>
+        </tr>
+        <tr>
+          <td>Mary Fedelis</td>
+          <td>Blockchain Technology</td>
+          <td>8</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Fedinard Moses</td>
+          <td>Game Development</td>
+          <td>9</td>
+          <td>55</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Resgister now for kodecamp6.0</h2>
+
+    <form action="/submit" method="POST" autocomplete="on">
+      <label for="fullname">Full Name <span class="required">*</span></label>
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        placeholder="Jane Doe"
+        required
+      />
+
+      <label for="email">Email Address <span class="required">*</span></label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@kodecamp.com"
+        required
+      />
+
+      <div class="form-group">
+        <label for="phone">Phone Number <span class="required">*</span></label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+234 801 234 5678"
+          pattern="^\+?\d{10,15}$"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="track"
+          >Preferred Learning Track <span class="required">*</span></label
+        >
+        <select id="track" name="track" required>
+          <option value="">-- Select a track --</option>
+          <option value="frontend">Frontend Development</option>
+          <option value="backend">Backend Development</option>
+          <option value="product-design">Product Design</option>
+          <option value="data-science">Data Science</option>
+          <option value="ai-machine-learning">AI & Machine Learning</option>
+          <option value="cloud-computing">Cloud Computing</option>
+        </select>
+      </div>
+
+      <label for="experience"
+        >Experience Level <span>*</span></label
+      >
+      <select id="experience" name="experience" required>
+        <option value="">-- Select experience level --</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+
+      <label for="about">Tell Us About Yourself</label>
+      <textarea
+        id="about"
+        name="about"
+        placeholder="Write a short bio or your motivation for joining..."
+        rows="4"
+      ></textarea>
+
+      <label for="dob">Date of Birth <span class="required">*</span></label>
+      <input type="date" id="dob" name="dob" required pattern="\d{4}-\d{2}-\d{2}" />
+
+      <input type="submit" value="Register Now" />
+    </form>
+  </body>
+</html>
